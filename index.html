@@ -1,152 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
+  <title>Museu Online de Conselheiro Mairinck</title>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>My Pillas</title>
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/componentes.css">
-
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="layout-cabecalho  layout-cabecalho--home">
-    <div class="container">
 
-      <nav class="navegacao">
-        <img src="imagens/logo.png" width="100" height="35" alt="MyPillas">
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-4 box-shadow">
+    <a href="index.html" class="navbar-brand">
+      MUSEU MAIRINQUENSE
+    </a>
 
-        <div class="navegacao__menu">
-          <button class="botao-chaveador  js-botao-chaveador"></button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <ul class="menu  js-menu">
-            <li class="menu__item">
-              <a href="#">Como funciona</a>
-            </li>
-            <li class="menu__item">
-              <a href="#planos">Planos e preços</a>
-            </li>
-            <li class="menu__item">
-              <a href="#">Contato</a>
-            </li>
-            <li class="menu__item  menu__item--botao">
-              <a href="#" class="botao botao--login">Login</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria de fotos</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="fotos.html">O Município</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="fotos.html">Colégio Estadual</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="historia.html">História</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quem-somos.html">Quem somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <section class="layout-chamada">
-    <div class="container">
+  <section class="container-fluid text-white">
+    <div class="row bg-dark">
 
-      <div class="chamada">
-        <h1 class="chamada__titulo">As finanças da sua empresa em ordem</h1>
-        <p class="chamada__subtitulo">Software de gestão simples e prático para pequenos negócios</p>
-        <div class="chamada__acao">
-          <a href="#planos" class="botao  botao--principal">Conheça os planos</a>
+      <div class="col-lg-9 p-0">
+        <div id="carouselFotos" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselFotos" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselFotos" data-slide-to="1"></li>
+            <li data-target="#carouselFotos" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/california.jpg" alt="California">
+              <div class="carousel-caption">
+                <h3 class="display-4">California</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/paris.jpg" alt="California">
+              <div class="carousel-caption">
+                <h3 class="display-4">Paris</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/dublin.jpg" alt="California">
+              <div class="carousel-caption">
+                <h3 class="display-4">Dublin</h3>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselFotos" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselFotos" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
         </div>
       </div>
 
+      <div class="col-md-3 p-4">
+        <h1 class="display-4">Resgatando nossa história!</h1>
+        <p class="lead">Conheça mais sobre nosso município</p>
+      </div>
     </div>
   </section>
 
-  <div class="layout-depoimento">
+  <section class="py-5 bg-light text-center">
     <div class="container">
-
-      <div class="depoimento">
-        <blockquote>
-          Eu tinha perdido totalmente o controle da minha empresa.
-          Depois que comecei a usar o MyPilas, me sinto muito mais organizado e confiante no futuro.
-        </blockquote>
-
-        <div class="depoimento__autor">
-          <img src="imagens/joao-da-silva.jpg" width="180" height="180" alt="João da Silva">
-          <p>Rafael O. Azevedo</p>
-        </div>
-      </div>
-
+      <span class="h6 d-block">SAIBA MAIS SOBRE A</span>
+      <h2 class="display-4 text-primary">NOSSA HISTÓRIA</h2>
     </div>
-  </div>
+  </section>
 
-  <div id="planos" class="layout-planos">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-
-          <article class="plano">
-            <h2 class="plano__cabecalho">Autônomo</h2>
-            <div class="plano__preco">R$ 59/mês</div>
-            <ul class="plano__caracteristicas">
-              <li>Até <strong>2 usuários</strong></li>
-              <li><strong>500MB</strong> de armazenamento</li>
-              <li>Lançamentos ilimitados</li>
-              <li>Acesso seguro</li>
-              <li>Lançamentos ilimitados</li>
-              <li>Sem fidelidade</li>
-            </ul>
-            <footer class="plano__rodape">
-              <a href="assine.html" class="botao  botao--assinar">Assinar</a>
-            </footer>
-          </article>
-
-        </div>
-
-        <div class="col-sm-4">
-          <article class="plano  plano--mais-popular">
-            <h2 class="plano__cabecalho">Micro</h2>
-            <div class="plano__preco">R$ 89/mês</div>
-            <ul class="plano__caracteristicas">
-              <li>Até <strong>5 usuários</strong></li>
-              <li><strong>1GB</strong> de armazenamento</li>
-              <li>Lançamentos ilimitados</li>
-              <li>Acesso seguro</li>
-              <li>Lançamentos ilimitados</li>
-              <li>Sem fidelidade</li>
-            </ul>
-            <footer class="plano__rodape">
-              <a href="assine.html" class="botao  botao--assinar">Assinar</a>
-            </footer>
-          </article>
-        </div>
-
-
-        <div class="col-sm-4 ultima-coluna">
-          <article class="plano">
-            <h2 class="plano__cabecalho">Pequena</h2>
-            <div class="plano__preco">R$ 99/mês</div>
-            <ul class="plano__caracteristicas">
-              <li>Até <strong>10 usuários</strong></li>
-              <li><strong>5GB</strong> de armazenamento</li>
-              <li>Lançamentos ilimitados</li>
-              <li>Acesso seguro</li>
-              <li>Lançamentos ilimitados</li>
-              <li>Sem fidelidade</li>
-            </ul>
-            <footer class="plano__rodape">
-              <a href="assine.html" class="botao botao--assinar">Assinar</a>
-            </footer>
-          </article>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <footer class="layout-rodape">
-    <div class="container">
-      <p>&copy; MyPilas. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="javascripts/app.js"></script>
-
+  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
